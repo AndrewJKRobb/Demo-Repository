@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="demo.showcase.MainPageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:id="@+id/ReportText"
+            android:layout_below="@+id/mapButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:gravity="center"/>
+
+
+        <ImageButton
+            android:text="Reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pie_chart_outlined_black_48dp"
+            android:layout_below="@+id/ReportText"
+            android:layout_marginTop="15dp"
+            android:id="@+id/reportButton"
+            android:onClick="goToReports"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:gravity="center"/>
+
+   </LinearLayout>
+</RelativeLayout>
